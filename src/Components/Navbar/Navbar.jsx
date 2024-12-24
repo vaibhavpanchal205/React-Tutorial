@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -26,8 +27,8 @@ const Navbar = () => {
             >Campus</Link></li>
             <li><Link to= 'testimonials' smooth={true} offset={0} duration={500}
             >Testimonials</Link></li>
-            <li><Link to= 'contact' smooth={true} offset={0} duration={500}><button
-            className='btn'/> Contact us</Link></li>
+            <li><Link to= 'contact' smooth={true} offset={0} duration={500}
+            className='btn'>Contact us</Link></li>
         </ul>
     </nav>
   )
